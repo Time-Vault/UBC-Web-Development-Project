@@ -1,0 +1,281 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  text-align: left;
+  margin: 2em;
+}
+
+/* dark mode */
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background: #121212;
+  }
+
+  svg {
+    color: #fff;
+  }
+
+  .link-dark,
+  .text-dark {
+    color: #fff !important;
+  }
+
+  .post {
+    background: #222222;
+    color: #fff;
+  }
+
+  header .nav-link:hover {
+    color: #000;
+    font-weight: 600;
+  }
+
+  
+}
+
+@media (prefers-color-scheme: light) {
+  .post {
+    background: #f4f4f4;
+  }
+}
+
+header .nav-link {
+  font-size: 18px;
+  font-weight: 550;
+  transition: 500ms;
+}
+
+header .nav-link:hover {
+  color: #3478f7;
+  font-weight: 600;
+}
+
+button {
+  border-radius: 10px;
+  background: #00b5ee;
+  border: none;
+  padding: 0.5em 1.5em;
+}
+
+button:hover {
+  background: #017ea4;
+  transition: 400ms;
+}
+
+button span {
+  font-size: 16px;
+  font-weight: 550;
+}
+
+.nav-link.active {
+  color: #3478f7;
+  font-weight: 600;
+}
+
+.nav-link.sidebarItems {
+  font-size: 18px;
+  padding: 0.5em 0em;
+  font-weight: 500;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2em;
+  gap: 1em;
+  border-radius: 20px;
+  margin-bottom: 2em;
+}
+
+.post p {
+  margin-bottom: -0.5rem;
+}
+
+.post-title {
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.1em;
+}
+
+/* new post div */
+.post-new {
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1em;
+  margin-bottom: 1em;
+
+}
+
+.post-new select {
+  border-radius: 15px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 0.5em;
+  /* inner padding */
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border: 1px solid #ccc;
+}
+
+.post-new textarea {
+  border-radius: 15px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 0.5em;
+  /* inner padding */
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border: 1px solid #ccc;
+}
+
+.post-new textarea:focus {
+  outline: none;
+  border: 1px solid #3478f7;
+}
+
+.post-new button {
+  background: #00b5ee;
+  border: none;
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 550;
+}
+
+.post .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  gap: 10px; /* adjust the value as needed */
+}
+
+.post .icon {
+  margin-left: auto;
+  font-size: 2.2rem;
+  font-weight: 350;
+  margin-top: -0.35em;
+}
+
+
+.postlink {
+  background-color: #ffb700;
+  text-decoration: none;
+}
+
+
+#newPost {
+  flex-direction: column;
+  align-items: normal;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+#newTitle,
+#newDescription {
+  border-radius: 10px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0.5em;
+}
+
+#newTitle {
+  font-size: 1.2em;
+  height: fit-content;
+  font-weight: 500;
+  /* inner padding */
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border: 1px solid #ccc;
+}
+
+#newDescription {
+  font-size: 1.0em;
+  border: 1px solid #ccc;
+  font-weight: 400;
+  /* inner padding */
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+}
+
+#newLink {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.0em;
+  border: 1px solid #ccc;
+  font-weight: 400;
+  /* inner padding */
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin-bottom: 1em;
+}
+
+#postLocation {
+  font-size: 1.25em;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin: 0.25em;
+  margin-bottom: 0.1em;
+}
+
+.upvotes {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  font-size: 1.25em;
+}
+
+.upvotes p {
+  margin: 0 0.25em;
+}
+
+.arrow.arrow-clicked-up {
+  color: #2382ff;
+}
+
+.arrow.arrow-clicked-down {
+  color: #ffbe1a;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+#newPostBtn {
+  background-color: #00b5ee;
+}
+r
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(248,249,250),var(--bs-bg-opacity))!important;
+}

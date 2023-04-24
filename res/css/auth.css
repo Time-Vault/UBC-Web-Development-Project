@@ -1,0 +1,18 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222222;
+  }
+  .container {
+    background-color: #222222;
+  }
+}
+
+.btn-circle {
+  width: 5em;
+  height: 5em;
+  padding: 6px 0px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
